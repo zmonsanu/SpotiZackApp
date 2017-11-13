@@ -5,6 +5,7 @@ import { SearchComponent } from './components/search/search.component';
 
 const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'buscar', component: SearchComponent },
   { path: 'search/:nombre', component: SearchComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 
