@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class SpotifyService {
@@ -6,12 +8,15 @@ export class SpotifyService {
 artistas:any[]= [];
 
 urlBusqueda:string = "https://api.spotify.com/v1/search";
-  constructor() { }
+  constructor(private http:Http) { }
 
   getArtistas( parametro:string){
-    let query = `q=${parametro}&type=artist`;
+    let query = `?q=${parametro}&type=artist`;
     let url= this.urlBusqueda + query;
-
+return this.http.get(url)
+.map(res=>{
+  console.log(res.json().artist.items);
+})
   }
 
 }

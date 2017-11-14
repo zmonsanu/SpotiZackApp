@@ -5,7 +5,8 @@ import { NgModule } from '@angular/core';
 //evita el error: No providers for http
 import { HttpModule } from '@angular/http';
 
-
+//servicios
+import {SpotifyService} from './services/spotify.service';
 
 //Routes
 import { APP_ROUTING } from './app.routes';
@@ -27,7 +28,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     HttpModule, //evita el error: No providers for http
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    SpotifyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
