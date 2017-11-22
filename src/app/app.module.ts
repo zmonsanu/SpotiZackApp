@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 
 //evita el error: No providers for http
-import { HttpModule } from '@angular/http';
+//import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 //servicios
 import {SpotifyService} from './services/spotify.service';
@@ -25,7 +26,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule, //evita el error: No providers for http
+    HttpClientModule,
+  //  HttpModule, //evita el error: No providers for http
     APP_ROUTING
   ],
   providers: [
