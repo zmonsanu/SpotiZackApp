@@ -14,11 +14,11 @@ urlBusqueda:string = "https://api.spotify.com/v1/search";
   getArtistas( parametro:string){
 
   let headers = new HttpHeaders({
-    'Authorization':'Bearer BQDyfe_-T5T2kelJ3BYTwn43BdJb5LXiORM7T4wLC8yXSmU1Rg75FojCtD8Lr1UOoTVYTSWwRMTn6bS0kmGhEw'
+    'Authorization':'Bearer BQCstc0bRmSjafHA4RUX0pxxFgeLWBjRfA27XfnEsREuMbwRpjaJEO0p2OxlUFNwZc8o7Ga6WbFJfCrP_LbWrg'
   });
     let query = `?q=${parametro}&type=artist`;
     let url= this.urlBusqueda + query;
-    console.log(url);
+    //console.log(url);
     return this.http.get( url, { headers } )
                 .map((resp:any)=>{
                   this.artistas = resp;
