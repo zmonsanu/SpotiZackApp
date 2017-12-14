@@ -10,14 +10,20 @@
           [(ngModel)]="termino">
 </div>
 <div class="col-md-9" *ngIf="termino.length >1 ">
-<h1>{{termino}}</h1>
+<h1 class="text-capitalize">{{termino}}</h1>
 <hr>
+  <!-- <h1>Total artistas encontrados:{{artSearch.length}}</h1>-->
+<div class="row">
+  <div  *ngFor="let artista of artSearch.artistas" class="col-md-3 text-center">
+  <img [src]="artSearch.images[1]?.url"
+        class="img-thumbnail">
+
+</div>
 
 <ul>
-  <li *ngFor="let artist of _spotifyService.artistas">
-  {{artist.name}}
-  </li>
-
+<!-- <li *ngFor="let artists of artistasSearch">
+  {{artists}}
+</li>-->
 </ul>
 </div>
 

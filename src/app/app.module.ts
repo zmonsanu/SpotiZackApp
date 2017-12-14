@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import {FormsModule}from '@angular/forms';
 //evita el error: No providers for http
-//import { HttpModule } from '@angular/http';
+import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 
 //servicios
@@ -28,7 +28,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-  //  HttpModule, //evita el error: No providers for http
+   HttpModule, //evita el error: No providers for http
     APP_ROUTING
   ],
   providers: [

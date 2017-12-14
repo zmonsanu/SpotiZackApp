@@ -14,7 +14,7 @@ urlBusqueda:string = "https://api.spotify.com/v1/search";
   getArtistas( parametro:string){
 
   let headers = new HttpHeaders({
-    'Authorization':'Bearer BQCstc0bRmSjafHA4RUX0pxxFgeLWBjRfA27XfnEsREuMbwRpjaJEO0p2OxlUFNwZc8o7Ga6WbFJfCrP_LbWrg'
+    'Authorization':'Bearer BQBAY2JPjoypdPtG1Qxg5IWVdrLvlZZnJFCrBKuBnoatNdiMSKcG9ooO1_jPmVBr1E5RJt4Z6Ep6tx4IQPU'
   });
     let query = `?q=${parametro}&type=artist`;
     let url= this.urlBusqueda + query;
