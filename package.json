@@ -1,6 +1,7 @@
 {
   "name": "spoti-zack-app",
   "version": "0.0.0",
+  "main": "app.js",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
