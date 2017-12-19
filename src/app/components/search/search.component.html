@@ -12,13 +12,17 @@
 <div class="col-md-9" *ngIf="termino.length >1 ">
 <h1 class="text-capitalize">{{termino}}</h1>
 <hr>
-  <!-- <h1>Total artistas encontrados:{{artSearch.length}}</h1>-->
-<div class="row">
-  <div  *ngFor="let artista of artSearch.artistas" class="col-md-3 text-center">
-  <img [src]="artSearch.images[1]?.url"
-        class="img-thumbnail">
 
-</div>
+
+ <div class="row">
+
+    <!--  {{artSearch | json }} -->
+  <div  *ngFor="let i of itemsSearch" class="col-md-3 text-center puntero"
+                                      [routerLink]="['/artist',i.id]">
+      <img [src]="i.images | sinfoto" class="img-thumbnail">
+<p>{{i.name}}</p>
+          </div>
+
 
 <ul>
 <!-- <li *ngFor="let artists of artistasSearch">
