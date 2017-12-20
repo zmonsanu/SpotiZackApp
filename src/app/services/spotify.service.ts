@@ -15,7 +15,7 @@ import { of } from 'rxjs/observable/of';
 export class SpotifyService {
 
 urlBase:string = "https://api.spotify.com/v1/";
-token:string='BQDJ2Xl23Y5lqRcBZ1QMvTHrOaYSYY03n3NrX-_9K0Dp94mW7vmsaabasTtwfg9vEFJHIp47Wl6JgpXCQzM';
+token:string='BQAbw52PpEWjD-bRNrWD6D5_1c1pJBi4aKpXc8kmoc8ccFwPvbg7zpjqao3InNSN2C8JHIy2VJwa5uBiIFE';
 artistas:any[]= [];
 artista: any;
 

@@ -482,7 +482,7 @@ var SpotifyService = (function () {
     function SpotifyService(http) {
         this.http = http;
         this.urlBase = "https://api.spotify.com/v1/";
-        this.token = 'BQDJ2Xl23Y5lqRcBZ1QMvTHrOaYSYY03n3NrX-_9K0Dp94mW7vmsaabasTtwfg9vEFJHIp47Wl6JgpXCQzM';
+        this.token = 'BQAbw52PpEWjD-bRNrWD6D5_1c1pJBi4aKpXc8kmoc8ccFwPvbg7zpjqao3InNSN2C8JHIy2VJwa5uBiIFE';
         this.artistas = [];
     }
     SpotifyService.prototype.getHeaders = function () {
