@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname,'dist')));
 app.get('*',  (req, res)=> {
   res.send(path.join(__dirname,'dist/index.html'));});//se debe compilar ng build --env=prod
 
-const port=process.env.PORT || '3001';
+const port=process.env.PORT || '3002';
 app.set('port',port);
 const server= http.createServer(app);
 
